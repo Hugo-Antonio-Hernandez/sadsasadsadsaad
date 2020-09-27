@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Bass Strings</h1>
+        <p id="description">Please help us by completing our survey</p>
+    </header>
+    <Form id="survey-form">
+        <div class="form-question">
+        <label for="name" id="name-label">Name <br></label> 
+        <input type="text" id=name placeholder="Enter your name" required>
+        </div>
+        <div class="form-question">
+        <label for="email" id="email-label">E-mail <br></label>
+        <input type="email" id=email placeholder="Enter your E-mail" required>
+        </div>
+        <div class="form-question">
+        <label for="number" id=number-label>How long (in years) have you played bass for <br> </label>
+        <input type="number" min="1" max="99" id=number placeholder="Years you have played" required>
+        </div>
+        <div class="form-question">
+            <p>Which of these options decribes you as a player</p>
+            <select id=dropdown name=player-type>
+                <option disabled selected value> Pick an option</option>
+                <option value="pro">I am a professional player</option> 
+                <option value="semi-pro">I play gigs, but i am not a professional</option>
+                <option value="amateur">I am a bedroom player</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-question">
+            <p>Which is your favorite brand of bass strings</p>
+            <label class=strings><input name="strings" type="radio" value="dr" class="radio"> DR</label> <br>
+            <label class=strings><input name="strings" type="radio" value="ernie" class="radio"> Ernie Ball</label> <br>
+            <label class=strings><input name="strings" type="radio" value="daddario" class="radio"> D'Addario</label> <br>
+            <label class=strings><input name="strings" type="radio" value="rotosound" class="radio"> Rotosound</label> <br>
+            <label class=strings><input name="strings" type="radio" value="other" class="radio"> Other</label> <br>
+        </div>
+        <div class="form-question">
+            <p>Which of them have you tried (Mark all that apply)</p>
+            <label class="check"><input name="strings-tried" type="checkbox" value="dr" class="checkbox"> DR</label> <br>
+            <label class="check"><input name="strings-tried" type="checkbox" value="ernie" class="checkbox"> Ernie Ball</label> <br>
+            <label class="check"><input name="strings-tried" type="checkbox" value="daddario" class="checkbox"> D'Addario</label> <br>
+            <label class="check"><input name="strings-tried" type="checkbox" value="rotosound" class="checkbox"> Rotosound</label> <br>
+            <label class="check"><input name="strings-tried" type="checkbox" value="none" class="checkbox"> None of them</label> <br>
+        </div>
+        <div class="form-question">
+            <p>Which other string brands have you tried?</p>
+            <textarea id="text-area" placeholder="Write them here"></textarea>
+        </div>
+        <div class="form-question">
+            <button type="submit" id="submit">
+                Submit
+            </button>
+        </div>
+        
+
+    </Form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
