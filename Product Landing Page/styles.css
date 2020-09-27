@@ -1,0 +1,139 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: #eee;
+      font-family: 'Lato' Arial, Helvetica, sans-serif;
+  }
+header{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
+    background-color: #eee;
+    
+}
+#img-div{
+    flex-grow: 1;
+}
+header img{
+    width: 300px;
+    height: 40px;
+}
+nav{ 
+   float: right;
+   color: #f2f2f2;
+   padding: 14px 16px;
+   font-size: 17px;
+   margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    padding-left: 15px;
+    color: black;
+    font-size: 23px;
+    padding-right: 20px;
+}
+.icon{
+    width: 200px;
+    height: 125px;
+    color: goldenrod;
+    
+}
+h1{
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+#desc{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 25%;
+}
+.characteristic{
+    flex-grow: 1;
+    font-size: 25px;
+}
+#desc-2{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 25%;
+}
+#desc-3{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 25%;
+}
+@media (max-width: 700px){
+    .icon{
+        display: none;
+    }
+
+}
+#video-div{
+    margin: auto;
+    width: 50%;
+    padding-top: 50px;
+}
+#video{
+    width: 500px;
+    margin-left: 53px;
+}
+#form-div{
+    padding-top: 35px;
+    margin: auto;
+    width: 50%;
+}
+#newsteller{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+#submit{
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer; 
+    margin-left: 250px;
+    margin-bottom: 35px;
+}
+#email{
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+#submit:hover{
+    padding: 0 20px;
+    height: 40px;        
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px white solid;
+    border-radius: 2px;
+    background: black;
+    cursor: pointer;
+    color: white;
+}
