@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id=navbar>
+        <header>Python</header>
+        <ul>
+            <li><a class="nav-link" href="#introduccion">Introduccion</a></li>
+            <li><a class="nav-link" href="#historia">Historia</a></li>
+            <li><a class="nav-link" href="#filosofia">Filosofia</a></li>
+            <li><a class="nav-link" href="#syntaxis">Syntaxis</a></li>
+            <li><a class="nav-link" href="#comentarios">Comentarios</a></li>
+            <li><a class="nav-link" href="#matematica">Matematica</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduccion">
+            <header id="Introduccion" class="main-title">
+                <h2>Introduccion</h2>
+            </header>
+            <p class="main-text">
+                Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma. <p>
+               <p> Es administrado por la Python Software Foundation. Posee una licencia de código abierto, denominada Python Software Foundation License.
+               </p>
+        </section>
+        <section class="main-section" id="historia">
+            <header id="Historia" class="main-title">
+                <h2>Historia</h2>
+            </header>
+            <p class="main-text">
+                Python fue creado a finales de los ochenta​ por Guido van Rossum en el Centro para las Matemáticas y la Informática (CWI, Centrum Wiskunde & Informatica), en los Países Bajos, como un sucesor del lenguaje de programación ABC, capaz de manejar excepciones e interactuar con el sistema operativo Amoeba.</p> 
+                <p>El nombre del lenguaje proviene de la afición de su creador por los humoristas británicos Monty Python. </p> 
+                <p>Van Rossum es el principal autor de Python, y su continuo rol central en decidir la dirección de Python es reconocido, refiriéndose a él como Benevolente Dictador Vitalicio (en inglés: Benevolent Dictator for Life, BDFL); sin embargo el 12 de julio de 2018 declinó de dicha situación de honor sin dejar un sucesor o sucesora. </p>
+            
+        </section>
+        <section class="main-section" id=filosofia>
+            <header id="Filosofia" class="main-title">
+                <h2>Filosofia</h2>
+            </header>
+            <p class="main-text">
+                Los usuarios de Python se refieren a menudo a la <strong>filosofía de Python</strong> que es bastante análoga a la filosofía de Unix. El código que siga los principios de Python se dice que es "pythonico". Estos principios fueron descritos por el desarrollador de Python Tim Peters en El Zen de Python. 
+                <ul>
+                    <li>Bello es mejor que feo.</li>
+                    <li>Explícito es mejor que implícito.</li>
+                    <li>Simple es mejor que complejo.</li>
+                    <li>Complejo es mejor que complicado.</li>
+                    <li>Lo práctico gana a lo puro.</li>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="syntaxis">
+            <header id="Syntaxis" class="main-title">
+                <h2>Syntaxis</h2>
+            </header>
+            <p class="main-text">
+                Python fue diseñado para ser leído con facilidad. Una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos !, || y && en Python se escriben not, or y and, respectivamente. Curiosamente el lenguaje Pascal es junto con COBOL uno de los lenguajes con muy clara sintaxis y ambos son de la década del 70. La idea del código claro y legible no es algo nuevo. </p>
+                <p>El contenido de los bloques de código (bucles, funciones, clases, etc.) es delimitado mediante espacios o tabuladores, conocidos como indentación, antes de cada línea de órdenes pertenecientes al bloque. Python se diferencia así de otros lenguajes de programación que mantienen como costumbre declarar los bloques mediante un conjunto de caracteres, normalmente entre llaves {}.​ Se pueden utilizar tanto espacios como tabuladores para indentar el código, pero se recomienda no mezclarlos.</p>
+                <h3>Función factorial en C (indentación opcional)</h3>
+                <code>
+                    int factorial(int x){ <br>
+                        if (x < 0 || x % 1 != 0) { <br>
+                        printf("x debe ser un numero entero mayor o igual a 0"); <br>
+                        return -1; //Error <br>
+                        } <br>
+                        if (x == 0) { <br>
+                        return 1; <br>
+                        } <br>
+                        return x * factorial(x - 1); <br>
+                    }
+                </code>
+                <h3>Función factorial en Python (indentación obligatoria)</h3>
+                <code>
+                    def factorial(x): <br>
+                        assert x >= 0 and x % 1 == 0, "x debe ser un entero mayor o igual a 0." <br>
+                        if x == 0: <br>
+                            return 1 <br>
+                        else: <br>
+                            return x * factorial(x - 1) <br>
+                </code>
+        </section>
+        <section class="main-section" id="comentarios">
+            <header id="Comentarios" class="main-title">
+                <h2>Comentarios</h2>
+            </header>
+            <p class="main-text">
+                Los comentarios se pueden poner de dos formas. La primera y más apropiada para comentarios largos es utilizando la notación ''' comentario ''', tres apóstrofos de apertura y tres de cierre. La segunda notación utiliza el símbolo #, y se extienden hasta el final de la línea. </p>
+                <p>El intérprete no tiene en cuenta los comentarios, lo cual es útil si deseamos poner información adicional en el código. Por ejemplo, una explicación sobre el comportamiento de una sección del programa.</p>
+                <code>
+                    ''' <br>
+                    Comentario más largo en una línea en Python <br>
+                    ''' <br>
+                    print ("Hola mundo") # También es posible añadir un comentario al final de una línea de código
+                </code>
+        </section>
+        <section class="main-section" id="matematica">
+            <header id="Matematica" class="main-title">
+                <h2>Matematica</h2>
+            </header>
+            <p class="main-text">
+                El módulo math permite acceder a las funciones de matemática de punto flotante:</p>
+            <code>
+                >>> import math <br>
+                >>> math.cos(math.pi / 3) <br>
+                0,494888338963 <br>
+                >>> math.log(1024, 2) <br>
+                10.0
+            </code>
+        </section>
+        <section class="main-section" id=variables>
+            <header id="Variables" class="main-title">
+                <h2>Variables</h2>
+            </header>
+            <p class="main-text">
+            Las variables se definen de forma dinámica, lo que significa que no se tiene que especificar cuál es su tipo de antemano y puede tomar distintos valores en otro momento, incluso de un tipo diferente al que tenía previamente. Se usa el símbolo = para asignar valores.</p>
+                <code>
+                    x = 1 <br>
+                    x = "texto" # Esto es posible porque los tipos son asignados dinámicamente
+                </code>
+    </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
